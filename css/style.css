@@ -40,6 +40,8 @@
                 list-style: none;
                 text-decoration: none;
                 text-align: right;
+                text-overflow: ellipsis;
+                padding-left: 2px;
             }
             
             .navigation {
@@ -51,9 +53,10 @@
                 border-bottom: 1px solid #66697f;
             }
             
-                       
+                                 
             .item-link {
                 text-decoration: none;
+                text-transform: uppercase;
                 color: white;
                 font-size: 0.8em;
                 font-weight: bold;
@@ -74,10 +77,12 @@
                 font-weight: normal;
                 color: white;
                 text-align: center;
+                text-overflow: ellipsis;
             }
             
             .btn {
                 color: white !important;
+                text-transform: uppercase;
                 font-size: 0.8em;
                 font-weight: bold;
                 margin: 3em auto;
@@ -104,16 +109,13 @@
                 
             }
             
-            .icon{
-                margin: 1em auto;
-            }
-
             .item-tittle  {
                 font-size: 1.2em;
                 font-weight: bolder;
                 text-align: center;
                 margin:0 auto;
                 padding: 10px 0 ;
+                text-overflow: ellipsis;
                 
             }
 
@@ -122,23 +124,51 @@
                 margin:2px auto;
                 padding:0 2em;
                 color: #66697f;
+                text-overflow: ellipsis;
             }
 
+           .icon{
+                  position: relative; 
+                  padding: 3px;
+                  width: 88px;
+                  height: 70px;
+                   }
+                
+    
+            .img{   
+                  display: block;
+                  object-fit: cover;
+                                  
+                 }
+
             @media screen and (max-width:768px) {
-                .burger {
-                        display: block;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                        background: url('./img/burger.png')center no-repeat;
-                        background-size: cover;
-                    }
-    
-                .text-conteiner {
-                        font-size: 2em;
-                    }  
-                .text {
-                        font-size: 0.3em
-                    } 
-    
+                     
+            .text-conteiner {
+                    font-size: 2em;
+                  }  
+            .text {
+                   font-size: 0.3em;
+                  text-overflow: ellipsis;
+                  }
+
+            .img-wrapper{position: relative; 
+                padding: 5px;
+                width: 43px;
+                height: 15px;
+                                         
+                 }  
+                 
+            .img-burger{   
+                 display: block;
+                 object-fit: cover;
+                }    
                 }
+               
+            @media screen and (max-width:1200px) {
+
+            .nav-item:last-child{
+                margin : 0 2px 0 10px;   
+                } 
+
+            }
+            
